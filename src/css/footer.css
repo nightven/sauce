@@ -1,0 +1,8 @@
+.social-media {
+  fill: currentColor;
+}
+
+.footer-socials__link:hover,
+.footer-socials__link:focus {
+  color: green;
+}

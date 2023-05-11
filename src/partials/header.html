@@ -1,13 +1,30 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container header__container">
+    <nav class="header__nav">
+      <img class="header__image" src="./img/header/logo.png" alt="Tomato">
+      <a class="header__logo" href="../index.html">
+      </a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__item-link" href="../index.html">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item-link" href="">Store</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item-link" href="">Recipes</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item-link" href="">Gallery</a>
+        </li>
+      </ul>
+      <button class="header__button" type="button">Contact us</button> 
+    </nav>
+    <button class="header__menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="" width="32" height="22">
+        <use href="../img/icons.svg#icon-menu-hamburger">
+        </use>
+      </svg>
+    </button>
+  </div>
 </header>
