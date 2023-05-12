@@ -6,10 +6,7 @@
 .page-products .container {
   padding: 0;
 }
-.slick-slide {
-  margin: 25px 0;
-  margin-left: 27px;
-}
+
 .products-list__link-image {
   border-radius: 50%;
   filter: drop-shadow(0px 0px 25px #7c7070);
@@ -19,6 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 44px;
+  justify-content: center;
 }
 .products__item {
   text-align: center;
