@@ -15,11 +15,12 @@
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 44px;
+  column-gap: 32px;
   justify-content: center;
 }
 .products__item {
   text-align: center;
+  width: 176px;
 }
 .products__item:nth-child(2n) {
   display: flex;
@@ -28,9 +29,14 @@
 }
 .link__image_left {
   margin-bottom: 79px;
+  margin-top: 10px;
 }
 .products-list__link-image {
   margin-top: 79px;
+}
+.link_image-rigth {
+  margin-left: 20px;
+  margin-bottom: 24px;
 }
 .products-list__item-title {
   font-family: 'Montserrat';
@@ -47,7 +53,7 @@
   height: 29px;
   margin-top: 16px;
   padding: 0px 14px;
-  /* margin-left: auto; */
+  margin-left: 42px;
 
   border-radius: 8px;
 
