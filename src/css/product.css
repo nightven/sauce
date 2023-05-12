@@ -63,3 +63,16 @@
   font-size: 16px;
   line-height: 20px;
 }
+/* arrows */
+.product-wrapper .slick-arrow.slick-prev {
+  top: 5px;
+  left: 187px;
+  z-index: 10;
+  rotate: 90deg;
+}
+.product-wrapper .slick-arrow.slick-next {
+  top: 360px;
+  right: 209px;
+  z-index: 10;
+  rotate: 90deg;
+}
