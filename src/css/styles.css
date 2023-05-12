@@ -7,12 +7,13 @@
 @import url('./reset.css');
 @import url('./variables.css');
 @import url('./vite-promo.css');
+@import url('./modal-order.css');
 @import url('./button.css');
 @import url('./header.css');
 @import url('./hero.css');
+@import url('slick.css');
+@import url('slick-theme.css');
 @import url('./product.css');
 @import url('./container.css');
 @import url('./footer.css');
-@import url('./modal-order.css');
-@import url('./slick-theme.css');
-@import url('./slick.css');
+
