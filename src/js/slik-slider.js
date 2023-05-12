@@ -1,7 +1,7 @@
 $('.slider').slick({
-  mobileFirst: true
+  mobileFirst: true,
+  vertical: true,
 });
-
 
 // $('.offer').slick({
 //   slidesToShow: 1,
