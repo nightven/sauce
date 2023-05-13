@@ -6,6 +6,8 @@
   --text-color-activ: rgba(188, 26, 26, 0.5);
   --buttons-color: rgba(188, 26, 26, 0.2);
   --buttons-color-activ: rgba(188, 26, 26, 0.5);
+  --footer-text-clr: rgba(255, 255, 255, 1);
+  --footer-add-text-clr: rgba(151, 151, 151, 1);
 
   --bg-linear-gradient: linear-gradient(
     213deg,
