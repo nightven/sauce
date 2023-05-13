@@ -1,5 +1,19 @@
 .page-gallery {
+  padding: 100px 0;
+  /* margin-top: 100px; */
+  /* padding: 132px 39px 44px 39px; */
 }
+/* @media only screen and (min-width: 1020px) {
+  .page-gallery {
+    padding: 131px 127px 47px 127px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .page-gallery {
+    padding: 131px 121px 47px 121px;
+  }
+} */
+
 .container {
 }
 .page-gallery__title {
