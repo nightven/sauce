@@ -60,6 +60,12 @@
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+
+  transition: background 300ms var(--cubic);
+}
+.products-list__item-btn:hover,
+.products-list__item-btn:focus {
+  background-color: var(--text-color-hero-accent);
 }
 .item-btn_left {
   margin-left: 20px;
@@ -130,5 +136,13 @@
     margin-left: 64px;
     margin-top: -35px;
     margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .link-image_rigth {
+    margin-left: 90px;
+  }
+  .link-image_left {
+    margin-right: 90px;
   }
 }
