@@ -1,32 +1,5 @@
-.backdrop-mobail-saidbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    /* max-width: 414px; */
-    width: 100%;
-    height: 100%;
-    /* width: 100vw;
-    height: 100vh; */
-    background-color: rgba(46, 47, 66, 0.4);
-    backdrop-filter: blur(6px);
-    
-    z-index: 100;
-
-    opacity: 1;
-    visibility: visible;
-    overflow: auto;
-
-    /* transform: translateX(100%);
-    transition: transform 400ms ease-in-out; */
-
-}
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
+@media only screen and (max-width: 1019px) {
+   
 .menu-container {
     position: fixed;
     top: 0;
@@ -34,7 +7,7 @@
 
     /* display: flex; */
 
-    max-width: 414px;
+    /* max-width: 414px; */
     width: 100%;
     height: 100%;
 
@@ -46,7 +19,14 @@
     font-size: 20px;
     line-height: 1.2;
 
-    transform: translateX(100%);
+    z-index: 100;
+    /* opacity: 1;
+    visibility: visible;
+    overflow: auto; */
+
+    background: #100F0F;
+
+    /* transform: translateX(100%); */
     transition: transform 400ms ease-in-out;
 }
 
@@ -54,6 +34,41 @@
     transform: translateX(0);
     
 }
+
+.backdrop-mobail-saidbar{
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    
+    /* max-width: 414px; */
+    /* width: 100%;
+    height: 100%; */
+    /* width: 100vw;
+    height: 100vh; */
+    /* background-color: rgba(46, 47, 66, 0.4);
+    backdrop-filter: blur(6px); */
+    
+    
+
+    /* opacity: 1;
+    visibility: visible;
+    overflow: auto; */
+
+    /* transform: translateX(100%);
+    transition: transform 400ms ease-in-out; */
+}
+
+/* .backdrop-mobail-saidbar .modal-open {
+    transform: translateX(0);
+} */
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
 
 .mobile-saidbar-top {
     display: flex;
@@ -65,12 +80,17 @@
 }
 
 .logo-icon {
+    margin-right: 20px;
     fill: currentColor;
 }
 
 .top-logo {
+    display: flex;
+    align-items: center;
+
     margin-top: 0;
-    gap: 20px;
+    /* margin-right: 20px; */
+    /* gap: 20px; */
 
     font-weight: 700;
     font-size: 16px;
@@ -165,3 +185,4 @@
     transform: translateX(0);
 } */
 
+}
