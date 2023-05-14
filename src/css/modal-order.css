@@ -29,8 +29,16 @@
 
   background-color: #100f0f;
   border-radius: 16px;
-  background-color: whit;
 }
+@media only screen and (min-width: 1020px) {
+  .modal-order {
+    max-width: 504px;
+    padding-left: 60px;
+    padding-top: 35px;
+    padding-right: 35px;
+  }
+}
+
 .modal-order__button {
   display: block;
   margin-left: auto;
@@ -42,12 +50,14 @@
   background-color: #100f0f;
   border: none;
 }
-
+.form-ordering__group{
+  padding: 0;
+}
 .button__svg {
   fill: white;
 }
 .backdrop.is-hidden .modal-order {
-  transform: translate(50%, 50%);
+   transform: translate(50%, 50%); 
 }
 .modal-order__title {
   margin-bottom: 40px;
@@ -83,7 +93,7 @@
 .form-ordering__input {
   margin-bottom: 20px;
   padding: 16px;
-  max-width: 382px;
+  max-width: 384px;
   width: 100%;
   height: 52px;
   color: #999ea3;
@@ -91,6 +101,8 @@
   border: 1px solid #f3f3f3;
   border-radius: 16px;
 }
+
+
 .form-ordering__input:invalid {
   border-color: rgb(255, 0, 0);
 }
@@ -138,6 +150,12 @@
   top: 24px;
   bottom: 24px;
 }
+@media only screen and (min-width: 1020px) {
+  .form-ordering__select-svg {
+    right: 48px;
+  }
+}
+
 .form-ordering__input-delivery {
   appearance: none;
 }
@@ -193,7 +211,9 @@
 .form-ordering__input-payment {
   appearance: none;
 }
-
+.payment{
+  margin-bottom: 0;
+}
 .form-ordering__radio {
   display: flex;
   justify-content: center;
@@ -251,6 +271,9 @@
   fill: #f3f3f3;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.confirm{
+  margin-bottom: 0;
 }
 .form-ordering__input-confirm:checked
   + .form-ordering__confirm
