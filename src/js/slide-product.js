@@ -4,6 +4,9 @@ $('.product-wrapper').slick({
   slidesToScroll: 1,
   autoplay: false,
   vertical: true,
+
+  // prevArrow: ,
+  // nextArrow: ,
 });
 
 $('.page-gallery__list').slick({
