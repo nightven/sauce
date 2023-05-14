@@ -77,6 +77,7 @@
   z-index: 10;
   rotate: 90deg;
 }
+
 .slick-prev:before {
   content: '≺';
 }
