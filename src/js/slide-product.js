@@ -4,6 +4,8 @@ $('.product-wrapper').slick({
   slidesToScroll: 1,
   autoplay: false,
   vertical: true,
+  swipeToSlide: true,
+  verticalSwiping: true,
 
   // prevArrow: ,
   // nextArrow: ,

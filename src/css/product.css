@@ -84,3 +84,43 @@
 .slick-next:before {
   content: '≻';
 }
+/* tablet */
+@media only screen and (min-width: 1020px) {
+  .products-descr {
+    display: block;
+    width: 443px;
+  }
+  .product-wrapper .slick-arrow.slick-prev {
+    top: 8px;
+    left: 50%;
+    z-index: 10;
+    rotate: 90deg;
+  }
+  .product-wrapper .slick-arrow.slick-next {
+    top: 688px;
+    right: 48%;
+    z-index: 10;
+    rotate: 90deg;
+  }
+  .products-list__item-text {
+    margin-top: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--text-color-main);
+  }
+  .products-list__item-btn {
+    margin: 20px 0 0 0;
+  }
+  .products-list__link-image:first-child {
+    margin-right: 64px;
+    margin-top: 30px;
+  }
+  .link-image_rigth {
+    margin-left: 64px;
+    margin-top: -35px;
+    margin-bottom: 30px;
+  }
+}
