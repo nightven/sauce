@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sauce/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cucina de Catherina</title>
+    <!-- slik library -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/sauce/assets/index-b904ad72.js"></script>
+    <link rel="stylesheet" href="/sauce/assets/index-a4c267ca.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <nav class="header__nav">
+      <img class="header__image" src="data:image/png;base64,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" alt="Tomato" />
+      <a class="header__logo" href="../index.html"> </a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__item-link" href="../index.html">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item-link" href="">Store</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item-link" href="">Recipes</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item-link" href="">Gallery</a>
+        </li>
+      </ul>
+      <button class="header__button" type="button">Contact us</button>
+    </nav>
+    <button
+      class="header__menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="" width="32" height="22">
+        <use href="./img/icons.svg#icon-menu-hamburger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <main>
+      <section class="hero">
+  <div class="container">
+    <!-- ---Wraper-title--- -->
+
+    <h1 class="hero-wraper__title">CUCINA DI CATHERINA</h1>
+    <p class="hero-wraper__subtitle">
+      We know,<br />
+      you will <span class="hero-wraper__subtitle_red">love</span> our product
+    </p>
+    <button class="hero-wraper__button" type="button" data-modal-open>
+      Buy now
+    </button>
+    <ul class="hero-list hero-wraper__list">
+      <li class="hero-list__item">
+        <span class="hero-list__item-number">14</span>
+        <p class="hero-list__item-text hero-list__item-text--after">
+          different tastes
+        </p>
+      </li>
+      <li class="hero-list__item">
+        <span class="hero-list__item-number">31</span>
+        <p class="hero-list__item-text">factories around the world</p>
+      </li>
+    </ul>
+
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="/sauce/assets/ketchup_desk@1x-48c76fb0.png "
+      />
+      <source
+        media="(min-width: 1020px)"
+        srcset="/sauce/assets/ketchup_tab@1x-d5d27cff.png "
+      />
+      <img
+        class="hero__img-pasta"
+        src="/sauce/assets/ketchup-ef257d12.png"
+        alt="Cupping glass of Pasta Sause"
+        loading="lazy"
+      />
+    </picture>
+    <!-- images-hero-- -->
+    <!-- --social-icons-- -->
+    <ul class="social hero__list-social">
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://tumblr.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="tumblr icon"
+        >
+          <svg class="social social__link-icon" width="24" height="24">
+            <use href="/sauce/assets/icons-8bc9f25e.svg#hero-icon-tumblr"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="instagram icon"
+        >
+          <svg class="social__link-icon" width="24" height="24">
+            <use href="/sauce/assets/icons-8bc9f25e.svg#hero-icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="youtube icon"
+        >
+          <svg class="social__link-icon" width="24" height="24">
+            <use href="/sauce/assets/icons-8bc9f25e.svg#hero-icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="twitter icon"
+        >
+          <svg class="social__link-icon" width="24" height="24">
+            <use href="/sauce/assets/icons-8bc9f25e.svg#hero-icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="page-products">
+  <h2 hidden class="products__tittle">Products</h2>
+  <div class="container">
+    <div class="product-wrapper">
+      <div class="slick-slide">
+        <ul class="products__list">
+          <li class="products__item">
+            <picture>
+              <!-- Tablet and desktop screen -->
+              <source
+                media="(min-width: 1020px)"
+                srcset="/sauce/assets/tomato-lg@2x-0d762f84.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 1019px)"
+                srcset="/sauce/assets/tomato-sm@2x-6d2a19df.png 2x"
+                type="image/png"
+              />
+              <img
+                class="products-list__link-image link-image_left"
+                src="/sauce/assets/tomato-sm@2x-6d2a19df.png"
+                alt="Classic sauce"
+                loading="lazy"
+              />
+            </picture>
+
+            <div>
+              <h3 class="products-list__item-title">Classic sauce</h3>
+              <p class="products-list__item-text">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button
+                type="button"
+                class="products-list__item-btn item-btn_left btn"
+              >
+                Buy now
+              </button>
+            </div>
+          </li>
+          <li class="products__item">
+            <div>
+              <h3 class="products-list__item-title">Spicy sauce</h3>
+              <p class="products-list__item-text">
+                For thrill-seekers, we added hot chili pepper to our sauce, it
+                also reveals all the tastes and aromas of the sauce wel.
+              </p>
+              <button type="button" class="products-list__item-btn btn">
+                Buy now
+              </button>
+            </div>
+
+            <picture>
+              <!-- Tablet and desktop screen -->
+              <source
+                media="(min-width: 1020px)"
+                srcset="/sauce/assets/chili-lg@2x-6d24c735.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 1019px)"
+                srcset="/sauce/assets/chili-sm@2x-4c2b5991.png 2x"
+                type="image/png"
+              />
+              <img
+                class="products-list__link-image link-image_rigth"
+                src="/sauce/assets/chili-sm@2x-4c2b5991.png"
+                alt="Classic sauce"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+      <div class="slick-slide">
+        <ul class="products__list">
+          <li class="products__item">
+            <picture>
+              <!-- Tablet and desktop screen -->
+              <source
+                media="(min-width: 1020px)"
+                srcset="/img/products/ketchup-or-tomato-lg@2x.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 1019px)"
+                srcset="/sauce/assets/ketchup-or-tomato-sm@2x-692c2b20.png 2x"
+                type="image/png"
+              />
+              <img
+                class="products-list__link-image link-image_left"
+                src="/sauce/assets/ketchup-or-tomato-sm@2x-692c2b20.png"
+                alt="Classic sauce"
+                loading="lazy"
+              />
+            </picture>
+            <div>
+              <h3 class="products-list__item-title">Classic sauce</h3>
+              <p class="products-list__item-text">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button
+                type="button"
+                class="products-list__item-btn item-btn_left btn"
+              >
+                Buy now
+              </button>
+            </div>
+          </li>
+          <li class="products__item">
+            <div>
+              <h3 class="products-list__item-title">Spicy sauce</h3>
+              <p class="products-list__item-text">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button type="button" class="products-list__item-btn btn">
+                Buy now
+              </button>
+            </div>
+
+            <picture>
+              <!-- Tablet and desktop screen -->
+              <source
+                media="(min-width: 1020px)"
+                srcset="/sauce/assets/red-hot-lg@2x-a78a2677.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 1019px)"
+                srcset="/sauce/assets/red-hot-sm@2x-de127812.png 2x"
+                type="image/png"
+              />
+              <img
+                class="products-list__link-image link-image_rigth"
+                src="/sauce/assets/red-hot-sm@2x-de127812.png"
+                alt="Classic sauce"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+      <div class="slick-slide">
+        <ul class="products__list">
+          <li class="products__item">
+            <picture>
+              <!-- Tablet and desktop screen -->
+              <source
+                media="(min-width: 1020px)"
+                srcset="/sauce/assets/ketchup-lg@2x-5917a90b.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 1019px)"
+                srcset="/sauce/assets/ketchup-sm@2x-c5760f2c.png 2x"
+                type="image/png"
+              />
+              <img
+                class="products-list__link-image link-image_left"
+                src="/sauce/assets/ketchup-sm@2x-c5760f2c.png"
+                alt="Classic sauce"
+                loading="lazy"
+              />
+            </picture>
+            <div>
+              <h3 class="products-list__item-title">Classic sauce</h3>
+              <p class="products-list__item-text">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button
+                type="button"
+                class="products-list__item-btn item-btn_left btn"
+              >
+                Buy now
+              </button>
+            </div>
+          </li>
+          <li class="products__item">
+            <div>
+              <h3 class="products-list__item-title">Spicy sauce</h3>
+              <p class="products-list__item-text">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button type="button" class="products-list__item-btn btn">
+                Buy now
+              </button>
+            </div>
+
+            <picture>
+              <!-- Tablet and desktop screen -->
+              <source
+                media="(min-width: 1020px)"
+                srcset="/sauce/assets/red-lg@2x-067b7bbd.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 1019px)"
+                srcset="/sauce/assets/red-sm@2x-0a8bfd77.png 2x"
+                type="image/png"
+              />
+              <img
+                class="products-list__link-image link-image_rigth"
+                src="/sauce/assets/red-sm@2x-0a8bfd77.png"
+                alt="Classic sauce"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- <section class="recipes">
+  <div class="container">
+    <h2 hidden class="recipes__tittle">Recipes</h2>
+    <ul class="recipes__list">
+      <li class="recipes__item">
+        <iframe
+          width="442"
+          height="307"
+          src="https://www.youtube.com/embed/qkTlcfCw7jQ?controls=0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+        <p class="recipes__text">Bell pepper pasta</p>
+      </li>
+      <li class="recipes__item">
+        <iframe
+          width="442"
+          height="307"
+          src="https://www.youtube.com/embed/vM58AvWU5L0?controls=0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+        <p class="recipes__text">Tomato paste</p>
+      </li>
+    </ul>
+  </div>
+</section>
+ -->
+      <section class="page-gallery">
+  <div class="container">
+    <h2 hidden class="page-gallery__title">Gallery</h2>
+    <ul class="page-gallery__list gallery-list">
+      <li class="gallery-list__item">
+        <picture class="gallery-picture">
+          <source
+            media="(min-width: 1020px)"
+            srcset="/sauce/assets/img-g1-770_pad@2x-700f79c7.jpg "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/sauce/assets/img-g1-1038_mac@2x-09d217f7.jpg "
+          />
+          <img
+            class="gallery-img"
+            src="/sauce/assets/img-g1-336@2x_phone-345a48a6.jpg"
+            alt="man takes tomatoes"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="gallery-list__item">
+        <picture class="gallery-picture">
+          <source
+            media="(min-width: 1020px)"
+            srcset="/sauce/assets/img-g2-770_pad@2x-cda05fa7.jpg "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/sauce/assets/img-g2-1038_mac@2x-4c3fec37.jpg "
+          />
+          <img
+            class="gallery-img"
+            src="/sauce/assets/img-g2-336@2x_phone-44b0f5e9.jpg"
+            alt="man takes tomatoes"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="gallery-list__item">
+        <picture class="gallery-picture" dir="rtl">
+          <source
+            media="(min-width: 1020px)"
+            srcset="/sauce/assets/img-g3-770_pad@2x-4e96c0dc.jpg "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/sauce/assets/img-g3-1038_mac@2x-fdaf0b79.jpg "
+          />
+          <img
+            class="gallery-img"
+            src="/sauce/assets/img-g3-336@2x_phone-4bcf9ecd.jpg"
+            alt="man takes tomatoes"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <!-- <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__content">
+      <a class="nav-logo footer-logo__link" href="./index.html">
+        <svg class="logo-icon">
+          <use href="./img/svg/icons.svg#logo-icon"></use>
+        </svg>
+        <span class="logo-word">CUCINA</span>
+      </a>
+      <ul class="nav-footer__list">
+        <li class="nav-footer__item">
+          <a class="nav-footer__link" href="">Home</a>
+        </li>
+        <li class="nav-footer__item">
+          <a class="nav-footer__link" href="">Store</a>
+        </li>
+        <li class="nav-footer__item">
+          <a class="nav-footer__link" href="">Recipes</a>
+        </li>
+        <li class="nav-footer__item">
+          <a class="nav-footer__link" href="">Gallery</a>
+        </li>
+      </ul>
+      <address class="address">
+        <ul class="address__list">
+          <li class="address__item">
+            <a class="address__link" href="">
+              <svg class="address-svg" width="24" height="24">
+                <use
+                  href="./img/footer/svg/social-media.svg#icon-location"
+                ></use>
+              </svg>
+              Elvia Elviaveien 1, 1234 Oslo</a
+            >
+          </li>
+          <li class="address__item">
+            <a class="address__link" href="mailto:willie.jennings@example.com">
+              <svg class="address-svg" width="24" height="24">
+                <use href="./img/footer/svg/social-media.svg#icon-email"></use>
+              </svg>
+              willie.jennings@example.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="footer__mobile-socials">
+        <ul class="footer-socials__list">
+          <li class="footer-socials__item">
+            <a class="footer-socials__link" href="">
+              <svg class="social-media">
+                <use
+                  href="./img/footer/svg/social-media.svg#icon-social-tumblr"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials__item">
+            <a class="footer-socials__link" href="">
+              <svg class="social-media">
+                <use
+                  href="./img/footer/svg/social-media.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials__item">
+            <a class="footer-socials__link" href="">
+              <svg class="social-media">
+                <use
+                  href="./img/footer/svg/social-media.svg#icon-youtube"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials__item">
+            <a class="footer-socials__link" href="">
+              <svg class="social-media">
+                <use
+                  href="./img/footer/svg/social-media.svg#icon-twitter"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__terms-and-policy">
+      By using this website, you agree to the
+      <a class="terms-and-policy__link" href="#">Terms of Service</a> and
+      <a class="terms-and-policy__link" href="#">Privacy Policy</a>
+    </p>
+  </div>
+</footer>
+ -->
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal-order">
+    <button class="modal-order__button" type="button" data-modal-close>
+      <svg class="button__svg" width="17" height="17">
+        <use href="./img/icons.svg#icon-order-modal"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    <!-- Script -->
+
+    <!-- Jquery script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Slick-slider script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Ours scripts -->
+    
+    
+    
+    
+  </body>
+</html>
