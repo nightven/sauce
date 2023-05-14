@@ -1,8 +1,15 @@
 .hero {
-  padding: 40px 0;
+  padding-top: 24px;
+  padding-bottom: 39px;
 }
 
 @media only screen and (min-width: 1020px) {
+  .hero {
+    padding: 32px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
   .hero {
     padding: 72px 0;
   }
@@ -28,7 +35,7 @@
   font-weight: 500;
   font-size: 30px;
   line-height: 1.23;
-  color: #f3f3f3;
+  color: var(--text-color-main);
 }
 
 @media only screen and (min-width: 1020px) {
@@ -44,7 +51,7 @@
   width: 66px;
   display: block;
   transform: rotate(-90deg) translate(-38px, -50px);
-  background-color: #f3f3f3;
+  background-color: var(--text-color-main);
 }
 
 @media only screen and (min-width: 1020px) {
@@ -56,7 +63,7 @@
 .hero-wraper__subtitle {
   font-size: 16px;
   line-height: 1.25;
-  color: #ffffff;
+  color: var(--footer-text-clr);
   margin-bottom: 228px;
 }
 
@@ -69,7 +76,7 @@
 }
 .hero-wraper__subtitle_red {
   font-weight: 600;
-  color: #bc1a1a;
+  color: var(--text-color-hero-accent);
 }
 @media only screen and (min-width: 1020px) {
   .hero-wraper__subtitle_red {
@@ -85,14 +92,14 @@
   font-size: 20px;
   line-height: 24px;
   border: none;
-  color: #f3f3f3;
-  background: rgba(188, 26, 26, 0.2);
+  color: var(--text-color-main);
+  background: var(--buttons-color);
 
   border-radius: 16px;
 }
 .hero-wraper__button:hover,
 .hero-wraper__button:focus {
-  background: rgba(188, 26, 26, 0.5);
+  background: var(--text-color-activ);
 }
 @media only screen and (min-width: 1020px) {
   .hero-wraper__button {
@@ -121,13 +128,13 @@
   width: 180px;
   font-size: 16px;
   line-height: 20px;
-  color: #f3f3f3;
+  color: var(--text-color-main);
 }
 .hero-list__item-number {
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
-  color: #f3f3f3;
+  color: var(--text-color-main);
 }
 
 .hero-list__item-text--after::after {
@@ -136,12 +143,12 @@
   width: 66px;
   display: block;
   transform: rotate(-90deg) translate(4px, 90px);
-  background-color: #f3f3f3;
+  background-color: var(--text-color-main);
 }
 
 .hero__img-pasta {
   position: absolute;
-  top: -25px;
+  top: -18px;
   right: 0;
 }
 @media only screen and (min-width: 1280px) {
@@ -172,8 +179,9 @@
 }
 
 .social__link-icon {
-  fill: #f3f3f3;
+  fill: var(--text-color-main);
 }
-.social__link-icon:hover {
-  fill: rgba(188, 26, 26, 0.5);
+.social__link-icon:hover,
+.social__link-icon:focus {
+  fill: var(--text-color-activ);
 }

@@ -13,19 +13,22 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* Tablet and > */
 @media screen and (min-width: 1020px) {
   .container {
-      max-width: 1020px;
+    max-width: 1020px;
   }
 }
 
 /* Desktop and > */
 @media screen and (min-width: 1280px) {
   .container {
-      max-width: 1110px;
+    max-width: 1110px;
   }
+}
+section {
+  margin-bottom: 100px;
 }

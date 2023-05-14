@@ -1,7 +1,13 @@
 .page-gallery {
-  padding: 100px 0;
-  /* margin-top: 100px; */
-  /* padding: 132px 39px 44px 39px; */
+  padding: 32px 0;
+
+  /* padding: 100px 0; */
+  /* padding: 132px 39px 44px 39px;  */
+}
+@media only screen and (min-width: 1020px) {
+  .page-gallery {
+    padding-top: 31px 0;
+  }
 }
 /* @media only screen and (min-width: 1020px) {
   .page-gallery {
@@ -27,4 +33,60 @@
 .gallery-picture {
 }
 .gallery-img {
+  border-radius: 8px;
+  max-width: 336px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media only screen and (min-width: 1020px) {
+  .gallery-img {
+    max-width: 770px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gallery-img {
+    max-width: 1038px;
+  }
+}
+.slick-next {
+  right: -5px;
+}
+.slick-prev {
+  left: -5px;
+}
+@media only screen and (min-width: 1020px) {
+  .slick-next {
+    right: 63px;
+  }
+  .slick-prev {
+    left: 63px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .slick-next {
+    right: -12px;
+  }
+  .slick-prev {
+    left: -12px;
+  }
+}
+
+element.style {
+}
+.slick-dots li {
+  width: 10px;
+}
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6f6666;
+}
+.slick-dots li button:before {
+  content: '"';
+  border: 2px solid white;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
 }
