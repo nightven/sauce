@@ -4,4 +4,5 @@ $('.page-gallery__list').slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 3000,
+  dots: true,
 });

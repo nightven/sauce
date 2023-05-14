@@ -1,9 +1,151 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-order>
   <div class="modal-order">
-    <button class="modal-order__button" type="button" data-modal-close>
+    <button class="modal-order__button" type="button" data-order-close>
       <svg class="button__svg" width="17" height="17">
-        <use href="./img/icons.svg#icon-order-modal"></use>
+        <use href="./img/svg/icons.svg#icon-order-modal"></use>
       </svg>
     </button>
+    <p class="modal-order__title">Your ordering</p>
+    <form class="form-ordering">
+      <fieldset class="form-ordering__group">
+        <legend class="form-ordering__group-title">Contacts</legend>
+        <label class="form-ordering__label">
+          <span class="form-ordering__text">Surname</span>
+          <input
+            class="form-ordering__input surname"
+            type="text"
+            name="surname"
+            placeholder="Krutas "
+            pattern="[a-zA-Z][a-zA-Z ]+"
+          />
+        </label>
+        <label class="form-ordering__label">
+          <span class="form-ordering__text">Name</span>
+          <input
+            class="form-ordering__input"
+            type="text"
+            name="name"
+            placeholder="Yuliia "
+            pattern="[a-zA-Z][a-zA-Z ]+"
+          />
+        </label>
+        <label class="form-ordering__label">
+          <span class="form-ordering__text">Telephone</span>
+          <input
+            class="form-ordering__input"
+            type="tel"
+            name="phone-number"
+            placeholder="+380"
+            pattern="+[0-9]{13}"
+          />
+        </label>
+        <label class="form-ordering__label" for="city">
+          <span class="form-ordering__text">City</span>
+        </label>
+        <div class="form-ordering__select-wraper">
+          <select class="form-ordering__select" name="city" id="city">
+            <svg class="form-ordering__select-svg" width="8" height="4">
+              <use href="./img/svg/icons.svg#icon-select"></use>
+            </svg>
+            <option class="form-ordering__option" value="Kyiv">Kyiv</option>
+            <option class="form-ordering__option" value="Dnipro">Dnipro</option>
+            <option class="form-ordering__option" value="Lviv">Lviv</option>
+            <option class="form-ordering__option" value="Odesa">Odesa</option>
+          </select>
+          <svg class="form-ordering__select-svg" width="8" height="4">
+            <use href="./img/svg/icons.svg#icon-select"></use>
+          </svg>
+        </div>
+      </fieldset>
+      <fieldset class="form-ordering__group">
+        <legend class="form-ordering__group-title">Delivery</legend>
+        <div class="form-ordering__delivery">
+          <input
+            class="form-ordering__input-delivery"
+            type="radio"
+            name="delivery"
+            id="departament"
+            checked
+          />
+          <label for="departament" class="form-ordering__label-delivery"
+            >Delivery to department of Nova Poshta
+          </label>
+          <input
+            class="form-ordering__input-delivery"
+            type="radio"
+            name="delivery"
+            id="courier"
+          />
+          <label class="form-ordering__label-delivery courier" for="courier"
+            >Delivery by courier of Nova Poshta</label
+          >
+        </div>
+        <label for="form-ordering__label" for="department"
+          ><span class="form-ordering__text">Select department</span></label
+        >
+        <div class="form-ordering__select-wraper">
+          <select
+            class="form-ordering__select"
+            name="department"
+            id="department"
+          >
+            <option class="form-ordering__option" value="department">
+              Department
+            </option>
+          </select>
+          <svg class="form-ordering__select-svg" width="8" height="4">
+            <use href="./img/svg/icons.svg#icon-select"></use>
+          </svg>
+        </div>
+      </fieldset>
+      <fieldset class="form-ordering__group">
+        <legend class="form-ordering__group-title">Payment method</legend>
+
+        <label class="form-ordering__label-radio card">
+          <input
+            class="form-ordering__input-payment"
+            type="radio"
+            name="payment"
+            checked
+          />
+          <span class="form-ordering__radio">
+            <svg class="form-ordering__radio-svg" width="12" height="12">
+              <use href="./img/svg/icons.svg#modal-ratio"></use>
+            </svg>
+          </span>
+          <span class="form-ordering__text"
+            >Credit card (Visa, Mastercard, ApplePay)</span
+          >
+        </label>
+        <label class="form-ordering__label-radio">
+          <input
+            class="form-ordering__input-payment"
+            type="radio"
+            name="payment"
+          />
+          <span class="form-ordering__radio">
+            <svg class="form-ordering__radio-svg" width="12" height="12">
+              <use href="./img/svg/icons.svg#modal-ratio"></use>
+            </svg>
+          </span>
+          <span class="form-ordering__text">Cash on delivery</span>
+        </label>
+        <a class="form-ordering__link" href=""> Add a comment to the order </a>
+        <label class="form-ordering__label-confirm">
+          <input
+            class="form-ordering__input-confirm"
+            type="checkbox"
+            name="confirm"
+          />
+          <span class="form-ordering__confirm">
+            <svg class="form-ordering_confirm-svg" width="14" height="14">
+              <use href="./img/svg/icons.svg#icon-checkmark"></use>
+            </svg>
+          </span>
+          <span class="form-ordering__text">Do not call to confirm</span>
+        </label>
+      </fieldset>
+      <button class="form-ordering__button-buy" type="submit">Buy now</button>
+    </form>
   </div>
 </div>
