@@ -64,7 +64,8 @@
     color: var(--text-color-main);
 }
 
-.logo-icon {
+.mobile__logo-icon {
+    margin-right: 20px;
     fill: currentColor;
 }
 
