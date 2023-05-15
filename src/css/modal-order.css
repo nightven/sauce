@@ -102,6 +102,13 @@
   border-radius: 16px;
 }
 
+@media only screen and (min-width: 1020px) {
+ .form-ordering__input  {
+    max-width: 410px;
+    width: 100%;
+  }
+}
+
 
 .form-ordering__input:invalid {
   border-color: rgb(255, 0, 0);
