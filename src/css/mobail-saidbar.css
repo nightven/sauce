@@ -45,7 +45,7 @@
     color: var(--text-color-main);
   }
 
-  .logo-icon {
+  .modal-logo-icon {
     margin-right: 20px;
     fill: currentColor;
   }
