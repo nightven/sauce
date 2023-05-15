@@ -97,6 +97,13 @@
   border-radius: 16px;
 }
 
+@media only screen and (min-width: 1020px) {
+  .modal-contacts__input {
+  max-width: 410px;
+  width: 100%;
+  }
+}
+
 .modal-contacts__input:invalid {
   border-color: rgb(255, 0, 0);
 }
