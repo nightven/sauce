@@ -33,7 +33,7 @@
     />
     
     <script type="module" crossorigin src="/sauce/assets/index-358e6c6c.js"></script>
-    <link rel="stylesheet" href="/sauce/assets/index-f85a52a9.css">
+    <link rel="stylesheet" href="/sauce/assets/index-613f707c.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -47,19 +47,21 @@
       </a>
       <ul class="header__list">
         <li class="header__item">
-          <a class="header__item-link" href="../index.html">Home</a>
+          <a class="header__item-link" href="./index.html">Home</a>
         </li>
         <li class="header__item">
-          <a class="header__item-link" href="">Store</a>
+          <a class="header__item-link" href="#page-products">Store</a>
         </li>
         <li class="header__item">
-          <a class="header__item-link" href="">Recipes</a>
+          <a class="header__item-link" href="#recipes">Recipes</a>
         </li>
         <li class="header__item">
-          <a class="header__item-link" href="">Gallery</a>
+          <a class="header__item-link" href="#page-gallery">Gallery</a>
         </li>
       </ul>
-      <button class="header__button" type="button">Contact us</button>
+      <button class="header__button" type="button" data-contacts-open>
+        Contact us
+      </button>
     </nav>
     <button class="header__menu-toggle" data-mobile-menu-open>
       <svg class="" width="31" height="16">
@@ -779,8 +781,7 @@
   </div>
 </div>
 
-    
-<div class="backdrop backdrop-mobail-saidbar is-hidden" data-mobile-menu>
+    <div class="backdrop backdrop-mobail-saidbar is-hidden" data-mobile-menu>
   <div class="menu-container">
     <div class="mobile-saidbar-top">
       <a class="nav-logo footer-logo top-logo" href="./index.html">
@@ -797,105 +798,114 @@
     </div>
     <ul class="list mobile-menu">
       <li class="item mobile-item">
-        <a class="link mobile-link" href="../index.html">Home</a>
+        <a class="link mobile-link" href="./index.html">Home</a>
       </li>
       <li class="item mobile-item">
-        <a class="link mobile-link" href="#">Store</a>
+        <a class="link mobile-link" href="#page-products">Store</a>
       </li>
       <li class="item mobile-item">
-        <a class="link mobile-link" href="#">Recipes</a>
+        <a class="link mobile-link" href="#recipes">Recipes</a>
       </li>
       <li class="item mobile-item">
-        <a class="link mobile-link" href="#">Gallery</a>
+        <a class="link mobile-link" href="#page-gallery">Gallery</a>
       </li>
     </ul>
-    <button class="mobail-saidbar-btn contact-use" type="button">
+    <button
+      class="mobail-saidbar-btn contact-use"
+      type="button"
+      data-contacts-open
+    >
       Contact us
     </button>
   </div>
 </div>
 
 <div class="menu-container is-hidden" data-mobile-menu>
-    
-        <div class="mobile-saidbar-top">
-            <a class="nav-logo footer-logo top-logo" href="./index.html">
-                <svg class="logo-icon" width="28" height="28">
-                    <use href="/sauce/assets/icons-5f6b292b.svg#logo-icon"></use>
-                </svg>
-                <span>CUCINA</span>
-            </a>
-            <button class="menu-toggle modal-btn" data-mobile-menu-close>
-                <svg class="button__mobile" width="17" height="17">
-                    <use href="/sauce/assets/icons-5f6b292b.svg#icon-close"></use>
-                </svg>
-            </button>
-        </div>
-        <ul class="list mobile-menu">
-            <li class="item mobile-item">
-                <a class="link mobile-link" href="#header">Home</a>
-            </li>
-            <li class="item  mobile-item">
-                <a class="link mobile-link" href="#page-products">Store</a>
-            </li>
-            <li class="item mobile-item">
-                <a class="link mobile-link" href="#recipes">Recipes</a>
-            </li>
-            <li class="item mobile-item">
-                <a class="link mobile-link" href="#page-gallery">Gallery</a>
-            </li>
-        </ul>
-        <button class="mobail-saidbar-btn contact-use" type="button" data-contacts-open>Contact us</button>
-
-   
+  <div class="mobile-saidbar-top">
+    <a class="nav-logo footer-logo top-logo" href="./index.html">
+      <svg class="logo-icon" width="28" height="28">
+        <use href="/sauce/assets/icons-5f6b292b.svg#logo-icon"></use>
+      </svg>
+      <span>CUCINA</span>
+    </a>
+    <button class="menu-toggle modal-btn" data-mobile-menu-close>
+      <svg class="button__mobile" width="17" height="17">
+        <use href="/sauce/assets/icons-5f6b292b.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <ul class="list mobile-menu">
+    <li class="item mobile-item">
+      <a class="link mobile-link" href="#header">Home</a>
+    </li>
+    <li class="item mobile-item">
+      <a class="link mobile-link" href="#page-products">Store</a>
+    </li>
+    <li class="item mobile-item">
+      <a class="link mobile-link" href="#recipes">Recipes</a>
+    </li>
+    <li class="item mobile-item">
+      <a class="link mobile-link" href="#page-gallery">Gallery</a>
+    </li>
+  </ul>
+  <button
+    class="mobail-saidbar-btn contact-use"
+    type="button"
+    data-contacts-open
+  >
+    Contact us
+  </button>
 </div>
-
 
     <div class="backdrop is-hidden" data-contacts>
-    <div class="modal-contacts">
-        <button class="modal-contacts__button" type="button" data-contacts-close>
-            <svg class="button__svg" width="17" height="17">
-                <use href="./img/icons.svg#icon-order-modal"></use>
-            </svg>
-        </button>
-        <p class="modal-contacts__area">
-            Leave your contacts and we will contact you
-        </p>
-        <form class="modal-contacts__form">
-            <label class="modal-contacts__label">
-                <span class="modal-contact__text">Name</span>
-                <input
-                    class="modal-contacts__input"
-                    type="text"
-                    name="name"
-                    placeholder="Yuliia"
-                    pattern="[a-zA-Z][a-zA-Z ]+"
-                />
-            </label>
-            <label class="modal-contacts__label">
-                <span class="modal-contact__text">Telephone</span>
-                <input
-                    class="modal-contacts__input"
-                    type="tel"
-                    name="tel"
-                    placeholder="+380"
-                    pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
-                />
-            </label>
-            <label class="modal-contacts__label">
-                    <span class="modal-contact__text">Email</span>
-                    <input
-                    class="modal-contacts__input"
-                    type="email"
-                    name="email"
-                    placeholder="Contact@gmail.com"
-                    pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"    
-                />
-            </label>
-                <textarea name="help">How can we help you?</textarea>
-                <button class="button modal-contacts__btn" type="submit">Contact us</button>
-        </form>
-     </div>
+  <div class="modal-contacts">
+    <button class="modal-contacts__button" type="button" data-contacts-close>
+      <svg class="button__svg" width="17" height="17">
+        <use href="/sauce/assets/icons-5f6b292b.svg#icon-order-modal"></use>
+      </svg>
+    </button>
+    <p class="modal-contacts__area">
+      Leave your contacts and we will contact you
+    </p>
+    <form class="modal-contacts__form">
+      <label class="modal-contacts__label">
+        <span class="modal-contact__text">Name</span>
+        <input
+          class="modal-contacts__input"
+          type="text"
+          name="name"
+          placeholder="Yuliia"
+          pattern="[a-zA-Z][a-zA-Z ]+"
+        />
+      </label>
+      <label class="modal-contacts__label">
+        <span class="modal-contact__text">Telephone</span>
+        <input
+          class="modal-contacts__input"
+          type="tel"
+          name="tel"
+          placeholder="+380"
+          pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+        />
+      </label>
+      <label class="modal-contacts__label">
+        <span class="modal-contact__text">Email</span>
+        <input
+          class="modal-contacts__input"
+          type="email"
+          name="email"
+          placeholder="Contact@gmail.com"
+          pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+        />
+      </label>
+      <textarea name="help" placeholder="How can we help you?"></textarea>
+      <button class="button modal-contacts__btn" type="submit">
+        Contact us
+      </button>
+    </form>
+  </div>
 </div>
+
     
     <!-- Script -->
 
