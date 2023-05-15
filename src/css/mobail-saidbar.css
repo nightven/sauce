@@ -50,7 +50,12 @@
     color: var(--text-color-main);
 }
 
+<<<<<<< Updated upstream
 .logo-icon {
+=======
+  
+  .logo-icon {
+>>>>>>> Stashed changes
     margin-right: 20px;
     fill: currentColor;
 }
