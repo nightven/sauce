@@ -1,46 +1,48 @@
 <div class="backdrop is-hidden" data-contacts>
-    <div class="modal-contacts">
-        <button class="modal-contacts__button" type="button" data-contacts-close>
-            <svg class="button__svg" width="17" height="17">
-                <use href="./img/icons.svg#icon-order-modal"></use>
-            </svg>
-        </button>
-        <p class="modal-contacts__area">
-            Leave your contacts and we will contact you
-        </p>
-        <form class="modal-contacts__form">
-            <label class="modal-contacts__label">
-                <span class="modal-contact__text">Name</span>
-                <input
-                    class="modal-contacts__input"
-                    type="text"
-                    name="name"
-                    placeholder="Yuliia"
-                    pattern="[a-zA-Z][a-zA-Z ]+"
-                />
-            </label>
-            <label class="modal-contacts__label">
-                <span class="modal-contact__text">Telephone</span>
-                <input
-                    class="modal-contacts__input"
-                    type="tel"
-                    name="tel"
-                    placeholder="+380"
-                    pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
-                />
-            </label>
-            <label class="modal-contacts__label">
-                    <span class="modal-contact__text">Email</span>
-                    <input
-                    class="modal-contacts__input"
-                    type="email"
-                    name="email"
-                    placeholder="Contact@gmail.com"
-                    pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"    
-                />
-            </label>
-                <textarea name="help">How can we help you?</textarea>
-                <button class="button modal-contacts__btn" type="submit">Contact us</button>
-        </form>
-     </div>
+  <div class="modal-contacts">
+    <button class="modal-contacts__button" type="button" data-contacts-close>
+      <svg class="button__svg" width="17" height="17">
+        <use href="./img/svg/icons.svg#icon-order-modal"></use>
+      </svg>
+    </button>
+    <p class="modal-contacts__area">
+      Leave your contacts and we will contact you
+    </p>
+    <form class="modal-contacts__form">
+      <label class="modal-contacts__label">
+        <span class="modal-contact__text">Name</span>
+        <input
+          class="modal-contacts__input"
+          type="text"
+          name="name"
+          placeholder="Yuliia"
+          pattern="[a-zA-Z][a-zA-Z ]+"
+        />
+      </label>
+      <label class="modal-contacts__label">
+        <span class="modal-contact__text">Telephone</span>
+        <input
+          class="modal-contacts__input"
+          type="tel"
+          name="tel"
+          placeholder="+380"
+          pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+        />
+      </label>
+      <label class="modal-contacts__label">
+        <span class="modal-contact__text">Email</span>
+        <input
+          class="modal-contacts__input"
+          type="email"
+          name="email"
+          placeholder="Contact@gmail.com"
+          pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+        />
+      </label>
+      <textarea name="help" placeholder="How can we help you?"></textarea>
+      <button class="button modal-contacts__btn" type="submit">
+        Contact us
+      </button>
+    </form>
+  </div>
 </div>
