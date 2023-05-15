@@ -88,13 +88,18 @@
 .modal-contacts__input {
   margin-bottom: 20px;
   padding: 16px;
-  max-width: 384px;
-  width: 100%;
+  width: 384px;
   height: 52px;
   color: #999ea3;
   background-color: #100f0f;
   border: 1px solid #f3f3f3;
   border-radius: 16px;
+}
+
+@media only screen and (min-width: 1020px) {
+  .modal-contacts__input {
+  width: 410px;
+  }
 }
 
 .modal-contacts__input:invalid {
