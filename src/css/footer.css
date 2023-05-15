@@ -48,7 +48,7 @@
 
 /* Mobile Logo-Word */
 @media screen and (max-width: 1019px) {
-    .logo-word {
+    .footer__logo-word {
         font-weight: 600;
         font-size: 16px;
         line-height: 1.25;
