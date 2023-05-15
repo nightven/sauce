@@ -79,7 +79,10 @@
     color: var(--text-color-main);
 }
 
+
+.mobile__logo-icon {
 .logo-icon {
+
     margin-right: 20px;
     fill: currentColor;
 }
