@@ -73,13 +73,13 @@
 
 /* arrows */
 .product-wrapper .slick-arrow.slick-prev {
-  top: 8px;
+  top: 16px;
   left: 187px;
   z-index: 10;
   rotate: 90deg;
 }
 .product-wrapper .slick-arrow.slick-next {
-  top: 374px;
+  top: 438px;
   right: 50%;
   z-index: 10;
   rotate: 90deg;
@@ -105,7 +105,7 @@
   }
   .product-wrapper .slick-arrow.slick-next {
     top: 750px;
-    right: 47%;
+    right: 48%;
     z-index: 10;
     rotate: 90deg;
   }
